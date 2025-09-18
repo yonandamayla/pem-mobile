@@ -1,3 +1,6 @@
+import 'package:bmi_calculator/bmi_calculation.dart';
+import 'package:bmi_calculator/history_feature.dart';
+
 void main() {
   List<Map<String, dynamic>> riwayat = [];
 

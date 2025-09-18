@@ -1,3 +1,5 @@
+import 'input_validation.dart';
+
 void hitungBMI(double tinggiCm, double beratKg, List<Map<String, dynamic>> riwayat) {
   if (!validasiInput(tinggiCm, beratKg)) return;
 

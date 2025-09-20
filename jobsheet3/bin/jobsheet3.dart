@@ -4,7 +4,7 @@ import 'dart:io';
 void main() {
   // Inisialisasi saldo awal
   double balance = 1000.00;
-  
+
   // Variabel untuk menyimpan pilihan pengguna
   String? choice;
 
@@ -17,7 +17,7 @@ void main() {
     print('3. Tarik Tunai');
     print('4. Keluar');
     stdout.write('Masukkan pilihan Anda (1-4): ');
-    
+
     // Membaca input dari pengguna
     choice = stdin.readLineSync();
 
@@ -33,7 +33,9 @@ void main() {
         double amount = double.parse(amountString);
         if (amount > 0) {
           balance += amount;
-          print('Setor tunai berhasil. Saldo baru Anda: \$${balance.toStringAsFixed(2)}');
+          print(
+            'Setor tunai berhasil. Saldo baru Anda: \$${balance.toStringAsFixed(2)}',
+          );
         } else {
           print('Jumlah setoran harus positif.');
         }
@@ -48,7 +50,9 @@ void main() {
         double amount = double.parse(amountString);
         if (amount > 0 && amount <= balance) {
           balance -= amount;
-          print('Tarik tunai berhasil. Sisa saldo Anda: \$${balance.toStringAsFixed(2)}');
+          print(
+            'Tarik tunai berhasil. Sisa saldo Anda: \$${balance.toStringAsFixed(2)}',
+          );
         } else if (amount > balance) {
           print('Saldo tidak mencukupi.');
         } else {

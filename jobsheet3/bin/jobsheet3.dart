@@ -20,5 +20,11 @@ void main() {
 
     // Membaca input dari pengguna
     choice = stdin.readLineSync();
+
+    // Percabangan untuk memproses pilihan pengguna
+    if (choice == '1') {
+      // Fitur Cek Saldo
+      print('Saldo Anda saat ini adalah: \$${balance.toStringAsFixed(2)}');
+    }
   }
 }

@@ -25,6 +25,21 @@ void main() {
     if (choice == '1') {
       // Fitur Cek Saldo
       print('Saldo Anda saat ini adalah: \$${balance.toStringAsFixed(2)}');
+    }else if (choice == '2') {
+      // Fitur Setor Tunai
+      stdout.write('Masukkan jumlah yang akan disetor: ');
+      String? amountString = stdin.readLineSync();
+      if (amountString != null && double.tryParse(amountString) != null) {
+        double amount = double.parse(amountString);
+        if (amount > 0) {
+          balance += amount;
+          print('Setor tunai berhasil. Saldo baru Anda: \$${balance.toStringAsFixed(2)}');
+        } else {
+          print('Jumlah setoran harus positif.');
+        }
+      } else {
+        print('Input tidak valid.');
+      }
     }
   }
 }

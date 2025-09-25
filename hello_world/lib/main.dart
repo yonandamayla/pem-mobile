@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+import 'basic_widgets/text_widget.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {  //tidak berubah
+class MyApp extends StatelessWidget {
+  //tidak berubah
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -35,7 +37,8 @@ class MyApp extends StatelessWidget {  //tidak berubah
   }
 }
 
-class MyHomePage extends StatefulWidget { //berubah
+class MyHomePage extends StatefulWidget {
+  //berubah
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -104,7 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const MyTextWidget(),
+            const SizedBox(height: 20),
+            // const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,

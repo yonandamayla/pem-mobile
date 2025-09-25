@@ -7,3 +7,5 @@
 ## Screenshot Aplikasi
 
 ![Screenshot hello_world](images/01.png)
+
+![Screenshot hello_world dengan Text Widget](images/02.png)

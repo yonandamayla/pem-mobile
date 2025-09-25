@@ -11,3 +11,13 @@
 ![Screenshot hello_world dengan Text Widget](images/02.png)
 
 ![Screenshot hello_world dengan Image Widget](images/03.png)
+
+![Screenshot hello_world dengan Loading Cupertino Widget](images/04.png)
+
+![Screenshot hello_world dengan Floating Action Button Widget](images/05.png)
+
+![Screenshot hello_world dengan Scaffold Widget](images/06.png)
+
+![Screenshot hello_world dengan Dialog Widget](images/07.png)
+
+![Screenshot hello_world dengan Input dan Selection Widget](images/08.png)

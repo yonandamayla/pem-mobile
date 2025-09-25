@@ -2,7 +2,7 @@
 
 **Nama:** Yonanda Mayla Rusdiaty  
 **Kelas:** SIB 3D  
-**Absen:** 30  
+**Absen:** 30
 
 ## Screenshot Aplikasi
 

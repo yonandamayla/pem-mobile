@@ -388,6 +388,25 @@ body: Container(
 
 ---
 
+## Tugas 2: Layout dan Navigasi (Ringkasan)
+
+Berikut adalah ringkasan tugas 2 yang berisi screenshot hasil tugas dan langkah-langkah singkat pelaksanaannya.
+
+![Tugas 2 - Hasil Layout dan Navigasi](images/tugas2.png)
+_Gambar: Tampilan hasil tugas 2 yang menampilkan layout dan navigasi antar halaman._
+
+Langkah singkat pelaksanaan:
+
+1. Siapkan project Flutter baru atau gunakan project yang ada.
+2. Buat folder `lib/pages` dan `lib/models` untuk mengorganisir kode.
+3. Buat model data `Item` dengan properti `name` dan `price`.
+4. Tambahkan `HomePage` yang menampilkan `ListView.builder` menggunakan data `List<Item>`.
+5. Bungkus setiap item Card dengan `InkWell` dan tambahkan `onTap` untuk memanggil `Navigator.pushNamed(context, '/item')`.
+6. Definisikan `ItemPage` dan konfigurasikan `MaterialApp` dengan `initialRoute: '/'` dan route `'/item'`.
+7. Jalankan aplikasi dan verifikasi navigasi dari daftar ke halaman detail.
+
+---
+
 ## Fitur Aplikasi
 
 ### Layout Components

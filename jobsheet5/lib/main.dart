@@ -62,11 +62,20 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    Widget imageSection = Image.asset(
+      'images/coban.jpg',
+      width: 600,
+      height: 240,
+      fit: BoxFit.cover,
+    );
+
     return MaterialApp(
       title: 'Flutter Layout: Yonanda 2341760184',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter Layout Demo')),
-        body: Column(children: [titleSection, buttonSection, textSection]),
+        body: Column(
+          children: [imageSection, titleSection, buttonSection, textSection],
+        ),
       ),
     );
   }

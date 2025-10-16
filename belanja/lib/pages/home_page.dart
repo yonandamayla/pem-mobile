@@ -5,29 +5,29 @@ import 'item_page.dart';
 class HomePage extends StatelessWidget {
   final List<Item> items = [
     Item(
-      name: 'Sugar', 
-      price: 5000, 
+      name: 'Sugar',
+      price: 5000,
       photo: 'assets/images/sugar.jpg',
       stok: 25,
       rating: 4.5,
     ),
     Item(
-      name: 'Salt', 
-      price: 2000, 
+      name: 'Salt',
+      price: 2000,
       photo: 'assets/images/salt.jpg',
       stok: 30,
       rating: 4.2,
     ),
     Item(
-      name: 'Rice', 
-      price: 15000, 
+      name: 'Rice',
+      price: 15000,
       photo: 'assets/images/rice.jpg',
       stok: 10,
       rating: 4.8,
     ),
     Item(
-      name: 'Oil', 
-      price: 25000, 
+      name: 'Oil',
+      price: 25000,
       photo: 'assets/images/oil.jpg',
       stok: 15,
       rating: 4.3,
@@ -76,7 +76,11 @@ class HomePage extends StatelessWidget {
                             Text('Stock: ${item.stok}'),
                             Row(
                               children: [
-                                const Icon(Icons.star, color: Colors.orange, size: 16),
+                                const Icon(
+                                  Icons.star,
+                                  color: Colors.orange,
+                                  size: 16,
+                                ),
                                 Text(' ${item.rating}'),
                               ],
                             ),

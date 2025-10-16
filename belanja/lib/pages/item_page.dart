@@ -22,13 +22,9 @@ class ItemPage extends StatelessWidget {
               width: double.infinity,
               height: 300,
               color: Colors.grey[200],
-              child: const Icon(
-                Icons.image,
-                size: 100,
-                color: Colors.grey,
-              ),
+              child: const Icon(Icons.image, size: 100, color: Colors.grey),
             ),
-            
+
             // Product Details
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -44,7 +40,7 @@ class ItemPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  
+
                   // Price
                   Row(
                     children: [
@@ -60,7 +56,7 @@ class ItemPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 12),
-                  
+
                   // Stock
                   Row(
                     children: [
@@ -73,7 +69,7 @@ class ItemPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 12),
-                  
+
                   // Rating
                   Row(
                     children: [
@@ -86,14 +82,11 @@ class ItemPage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 24),
-                  
+
                   // Description Section
                   const Text(
                     'Description',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
                   Text(
@@ -101,7 +94,7 @@ class ItemPage extends StatelessWidget {
                     style: const TextStyle(fontSize: 16),
                   ),
                   const SizedBox(height: 24),
-                  
+
                   // Add to Cart Button
                   SizedBox(
                     width: double.infinity,

@@ -118,6 +118,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     'Ini adalah contoh teks yang sangat panjang untuk menguji fungsi AutoSizeText. Teks ini akan dipotong menjadi maksimal 2 baris dengan ellipsis di akhir jika terlalu panjang untuk ditampilkan.',
               ),
             ),
+            const SizedBox(height: 20),
+            Container(
+              color: Colors.yellowAccent,
+              width: 50,
+              child: const RedTextWidget(
+                text: 'You have pushed the button this many times:',
+              ),
+            ),
+            Container(
+              color: Colors.greenAccent,
+              width: 100,
+              child: const Text('You have pushed the button this many times:'),
+            ),
           ],
         ),
       ),

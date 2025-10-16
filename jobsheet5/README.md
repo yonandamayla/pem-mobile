@@ -12,6 +12,7 @@ Proyek Flutter untuk mempelajari implementasi layout widget dengan tema wisata C
 - [Praktikum 2: Implementasi Button Row](#praktikum-2-implementasi-button-row)
 - [Praktikum 3: Implementasi Text Section](#praktikum-3-implementasi-text-section)
 - [Praktikum 4: Implementasi Image Section](#praktikum-4-implementasi-image-section)
+- [Praktikum 5: Membangun Navigasi di Flutter](#praktikum-5-membangun-navigasi-di-flutter)
 
 ---
 
@@ -234,6 +235,156 @@ _Gambar: Hasil implementasi lengkap aplikasi wisata Coban Lanang dengan layout s
 2. **Title Section**: Nama dan lokasi wisata dengan rating
 3. **Button Section**: Tombol CALL, ROUTE, dan SHARE
 4. **Text Section**: Identitas dan deskripsi lengkap
+
+---
+
+## Praktikum 5: Membangun Navigasi di Flutter
+
+### Tujuan
+
+Memahami cara kerja mekanisme navigation dan route di Flutter serta cara membuat navigation dan route untuk aplikasi multi halaman.
+
+### Hasil Implementasi
+
+![Praktikum 5 - Navigation Demo](images/praktikum7.png)
+_Gambar: Hasil implementasi Praktikum 5 - Aplikasi belanja dengan navigasi multi halaman_
+
+### Langkah-langkah
+
+#### Langkah 1: Siapkan Project Baru
+
+Membuat project Flutter baru dengan nama "belanja" dan struktur folder:
+
+```
+belanja/
+├── lib/
+│   ├── main.dart
+│   ├── models/
+│   │   └── item.dart
+│   └── pages/
+│       ├── home_page.dart
+│       └── item_page.dart
+```
+
+#### Langkah 2: Mendefinisikan Route
+
+Membuat file route dengan class yang extends StatelessWidget:
+
+**home_page.dart:**
+
+```dart
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+```
+
+**item_page.dart:**
+
+```dart
+import 'package:flutter/material.dart';
+
+class ItemPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+```
+
+#### Langkah 3: Lengkapi Kode di main.dart
+
+Konfigurasi routing dengan named routes:
+
+```dart
+void main() {
+  runApp(MaterialApp(
+    initialRoute: '/',
+    routes: {
+      '/': (context) => HomePage(),
+      '/item': (context) => ItemPage(),
+    },
+  ));
+}
+```
+
+#### Langkah 4: Membuat Data Model
+
+Model sederhana untuk data item:
+
+```dart
+class Item {
+  String name;
+  int price;
+
+  Item({this.name, this.price});
+}
+```
+
+#### Langkah 5: Lengkapi Kode di HomePage
+
+Definisi List<Item> sebagai data source:
+
+```dart
+final List<Item> items = [
+  Item(name: 'Sugar', price: 5000),
+  Item(name: 'Salt', price: 2000)
+];
+```
+
+#### Langkah 6: Membuat ListView dan itemBuilder
+
+Implementasi ListView dengan Card untuk menampilkan data:
+
+```dart
+body: Container(
+  margin: EdgeInsets.all(8),
+  child: ListView.builder(
+    padding: EdgeInsets.all(8),
+    itemCount: items.length,
+    itemBuilder: (context, index) {
+      final item = items[index];
+      return Card(
+        child: Container(
+          margin: EdgeInsets.all(8),
+          child: Row(
+            children: [
+              Expanded(child: Text(item.name)),
+              Expanded(
+                child: Text(
+                  item.price.toString(),
+                  textAlign: TextAlign.end,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    },
+  ),
+),
+```
+
+### Fitur Navigation
+
+- ✅ **Named Routes**: Sistem routing dengan nama yang unik
+- ✅ **MaterialApp Routes**: Konfigurasi routing di level aplikasi
+- ✅ **Data Model**: Model Item untuk struktur data
+- ✅ **ListView.builder**: Dynamic list building dari data
+- ✅ **Card UI**: Material design cards untuk setiap item
+
+### Konsep yang Dipelajari
+
+1. **Route Management**: Definisi dan konfigurasi routes
+2. **Data Modeling**: Pembuatan model data sederhana
+3. **List Building**: Dynamic UI generation dari data
+4. **Material Design**: Implementasi Card dan Layout components
 
 ---
 

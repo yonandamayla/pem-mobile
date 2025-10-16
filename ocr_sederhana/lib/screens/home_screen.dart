@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'scan_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,18 +7,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(title: const Text('Menu Utama')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) =>
-                    const Scaffold(body: Center(child: Text('Next'))),
-              ),
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ScanScreen()),
             );
           },
-          child: const Text('Go'),
+          child: const Text('Mulai Scan Teks'),
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'red_text_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -108,6 +109,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 20),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: RedTextWidget(
+                text: 'Ini adalah contoh teks yang sangat panjang untuk menguji fungsi AutoSizeText. Teks ini akan dipotong menjadi maksimal 2 baris dengan ellipsis di akhir jika terlalu panjang untuk ditampilkan.',
+              ),
             ),
           ],
         ),

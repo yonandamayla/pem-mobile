@@ -52,11 +52,21 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Nama: Yonanda Mayla Rusdiaty\n'
+        'NIM: 2341760184\n\n'
+        'Coban Lanang adalah destinasi wisata alam yang terletak di Dusun Ngajung, Desa Pandanrejo, Kecamatan Bumiaji, Kota Batu, Malang. Tempat ini menawarkan pesona air terjun dengan ketinggian sekitar 15 hingga 20 meter dan aliran air yang cukup deras serta jernih. Dibuka pada tahun 2017, Coban Lanang telah menjadi salah satu tempat favorit untuk bersantai dan menikmati keindahan alam. Pengunjung dapat menikmati pemandangan dari berbagai sudut, baik dari depan, samping, maupun belakang air terjun. Selain itu, kawasan ini juga dilengkapi dengan fasilitas yang lengkap seperti kafe, restoran, dan area bersantai, sehingga cocok untuk dijadikan tempat nongkrong bersama teman-teman.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter Layout: Yonanda 2341760184',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter Layout Demo')),
-        body: Column(children: [titleSection, buttonSection]),
+        body: Column(children: [titleSection, buttonSection, textSection]),
       ),
     );
   }

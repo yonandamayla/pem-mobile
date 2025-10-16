@@ -114,7 +114,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: RedTextWidget(
-                text: 'Ini adalah contoh teks yang sangat panjang untuk menguji fungsi AutoSizeText. Teks ini akan dipotong menjadi maksimal 2 baris dengan ellipsis di akhir jika terlalu panjang untuk ditampilkan.',
+                text:
+                    'Ini adalah contoh teks yang sangat panjang untuk menguji fungsi AutoSizeText. Teks ini akan dipotong menjadi maksimal 2 baris dengan ellipsis di akhir jika terlalu panjang untuk ditampilkan.',
               ),
             ),
           ],

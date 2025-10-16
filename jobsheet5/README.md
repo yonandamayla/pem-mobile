@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+## Praktikum 4: Implementasi Image Section
+
+Hasil implementasi aplikasi Flutter dengan layout lengkap yang mencakup image section, title section, button section, dan text section menggunakan ListView untuk mendukung scroll dinamis.
+
+![Praktikum 4 - Flutter Layout Demo](praktikum4.png)
+*Gambar: Hasil implementasi Praktikum 4 - Aplikasi wisata Coban Lanang dengan layout lengkap*
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

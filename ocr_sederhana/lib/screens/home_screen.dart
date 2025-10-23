@@ -9,14 +9,15 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Menu Utama')),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
+        child: ListTile(
+          leading: Icon(Icons.camera_alt, color: Colors.blue),
+          title: Text('Mulai Pindai Teks Baru'),
+          onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const ScanScreen()),
             );
           },
-          child: const Text('Mulai Scan Teks'),
         ),
       ),
     );
